@@ -2,6 +2,9 @@
 
 An interactive web map showing lighthouses in South Korea using a watercolor basemap and an artistic lighthouse symbol. The map is designed as a hybrid of **classification and aesthetics**: lighthouses are styled by century built (when available), while the interface uses an “old nautical chart” theme.
 
+## Live Site:
+https://eientk88.github.io/Lighthouses-SouthKorea/
+
 ## Features
 - **Leaflet** interactive map (pan/zoom)
 - **Stamen Watercolor** basemap (via Stadia Maps)
@@ -22,3 +25,7 @@ Note: some features may have missing `inception` (built year).
 - [Leaflet](https://leafletjs.com/)
 - [Leaflet MiniMap](https://github.com/Norkart/Leaflet-MiniMap)
 - Stamen Watercolor tiles (served by Stadia Maps)
+
+## Author
+Athanasios Karageorgos
+February 2026
