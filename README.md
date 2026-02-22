@@ -1,6 +1,6 @@
 # Lighthouses of South Korea
 
-An interactive web map showing lighthouses in South Korea using a watercolor basemap and an artistic lighthouse symbol. The map is designed as a hybrid of **classification + aesthetics**: lighthouses are styled by century built (when available), while the interface uses an “old nautical chart” theme.
+An interactive web map showing lighthouses in South Korea using a watercolor basemap and an artistic lighthouse symbol. The map is designed as a hybrid of **classification and aesthetics**: lighthouses are styled by century built (when available), while the interface uses an “old nautical chart” theme.
 
 ## Features
 - **Leaflet** interactive map (pan/zoom)
