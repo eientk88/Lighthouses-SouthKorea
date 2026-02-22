@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lighthouses of South Korea</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- MiniMap plugin -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Title / author / date / source (TODALS-ish info panel) -->
+  <div class="map-card parchment" id="map-meta">
+    <div class="title">Lighthouses of South Korea</div>
+    <div class="subtitle">Watercolor basemap • hover to highlight • click for details</div>
+    <div class="meta">
+      <div><b>Author:</b> Athanasios Karageorgos</div>
+      <div><b>Date:</b> Feb 22, 2026</div>
+      <div><b>Source:</b> Wikidata (WDQS)</div>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="map-card parchment" id="map-legend">
+    <div class="legend-title">Legend (Century Built)</div>
+
+    <div class="legend-row"><span class="swatch c-pre1900"></span><span>Before 1900</span></div>
+    <div class="legend-row"><span class="swatch c-1900s"></span><span>1900s</span></div>
+    <div class="legend-row"><span class="swatch c-2000s"></span><span>2000s+</span></div>
+    <div class="legend-row"><span class="swatch c-unknown"></span><span>Unknown</span></div>
+
+    <div class="legend-row" style="margin-top:8px;">
+      <span class="swatch hover"></span>
+      <span>Hover highlight</span>
+    </div>
+  </div>
+
+  <!-- Fancy compass rose (moved left so it won’t overlap zoom buttons) -->
+  <div class="map-card parchment compass" aria-label="Compass rose north arrow">
+    <div class="compass-svg" aria-hidden="true"></div>
+    <div class="compass-label">N</div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- MiniMap plugin -->
+  <script src="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
