@@ -6,14 +6,19 @@ L.control.zoom({ position: "topright" }).addTo(map);
 L.control.scale({ imperial: false, position: "bottomright" }).addTo(map);
 
 // Stamen Watercolor via Stadia Maps (raster)
-const watercolor = L.tileLayer("https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg", {
-  maxZoom: 16,
-  className: "watercolor-tiles",
-  attribution:
-    '&copy; <a href="https://stadiamaps.com/" target="_blank" rel="noopener">Stadia Maps</a> ' +
-    '&copy; <a href="https://stamen.com/" target="_blank" rel="noopener">Stamen Design</a> ' +
-    '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
-}).addTo(map);
+const STADIA_API_KEY = "ad2dff62-b9ab-4b60-a9ef-d91c975567ca";
+
+L.tileLayer(
+  `https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg?api_key=${STADIA_API_KEY}`,
+  {
+    maxZoom: 16,
+    className: "watercolor-tiles",
+    attribution:
+      '&copy; <a href="https://stadiamaps.com/" target="_blank" rel="noopener">Stadia Maps</a> ' +
+      '&copy; <a href="https://stamen.com/" target="_blank" rel="noopener">Stamen Design</a> ' +
+      '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
+  }
+).addTo(map);
 
 // MiniMap inset (reliable)
 const miniMapLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
