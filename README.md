@@ -27,5 +27,5 @@ Note: some features may have missing `inception` (built year).
 - Stamen Watercolor tiles (served by Stadia Maps)
 
 ## Author
-Athanasios Karageorgos
+Athanasios Karageorgos 
 February 2026
